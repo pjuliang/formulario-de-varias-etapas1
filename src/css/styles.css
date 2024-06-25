@@ -337,7 +337,7 @@ img {
     background-color: #f0f0f0; /* Cor de fundo da barra */
   }
 /* Estilos específicos para dispositivos móveis */
-@media only screen and (max-width: 600px) {
+media only screen and (max-width: 600px) {
   .container {
     padding: 10px;
   }
