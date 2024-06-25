@@ -1,0 +1,338 @@
+body {
+    font-family: 'Ubuntu bold', Arial, Helvetica, sans-serif;
+    background-color: hsl(217, 100%, 97%);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10%;
+    flex-direction: column;
+    height: 800px;
+    
+  }
+  
+  .container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 600px;
+    min-height: 400px;/* Ajustar a altura mínima aqui */
+    height: 300px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 800px;
+    
+   
+  }
+
+  .bottom-right-button {
+    position: absolute;
+    bottom: 30px; /* Distância do botão até a parte inferior */
+    right: 100px; /* Distância do botão até a parte direita */
+    background-color: #125399; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 15px 50px; /* Espaçamento interno do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .sidebar {
+        background-image: url('../images/bg-sidebar-desktop.svg'); /* Substitua pelo caminho correto da sua imagem */
+        background-size: cover; /* Para cobrir todo o espaço da .sidebar */
+        background-position: center; /* Para centralizar a imagem */
+        overflow-y: auto; /* Scroll vertical se o conteúdo exceder a altura */
+        /* Adicione outros estilos conforme necessário */
+        max-height: 100vh; /* Definindo a altura máxima como 50% da altura da viewport */
+        overflow-y: auto; /* Adicionando scroll caso o conteúdo ultrapasse a altura definida */
+        flex: 1;
+        background-color: hsl(243, 100%, 62%);
+        color: white;
+        padding: 20px;
+        border-radius: 8px 8px 8px 8px;
+         /* Estilos para os números dentro de círculos */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        align-items: flex-start; /* Alinha os itens à direita */
+      
+  }
+
+  .sidebar-horizontal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .sidebar-horizontal .step-indicator {
+    display: flex;
+    align-items: center;
+  }
+
+  
+.sidebar .number {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 50%; /* Para tornar o elemento circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Espaço entre os números */
+  }
+  .step-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; /* Espaçamento entre os indicadores */
+    cursor: pointer; /* Adicionado cursor pointer para indicar que é clicável */
+  }
+  
+  .step-number {
+    width: 30px; /* Tamanho do círculo */
+    height: 30px; /* Tamanho do círculo */
+    border-radius: 50%; /* Formato de círculo */
+    background-color: #007BFF; /* Cor de fundo do círculo */
+    color: white; /* Cor do texto dentro do círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Texto em negrito */
+    font-size: 18px; /* Tamanho do texto */
+    margin-right: 8px; /* Espaçamento entre o círculo e o rótulo */
+    margin-left: auto;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+  }
+
+
+  .step-number.active {
+    background-color: hsl(253, 81%, 26%); /* Cor de fundo do círculo ativo */
+  }
+
+  .step-label {
+    font-size: 16px; /* Tamanho do texto do rótulo */
+    margin-left: 10px; /* Espaçamento entre o círculo e o rótulo */
+  }
+
+  input[type=text], input[type=email], input[type=tel] {
+    width: calc(100% - 20px); /* Largura do input menos o padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+  }
+  
+  form {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  .step {
+    display: none;
+  }
+  
+  .step-active {
+    display: block;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .step {
+    display: none;
+  }
+
+  .step-active {
+    display: block;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .bottom-right-button {
+    background-color: #1034d6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .step {
+    padding: 20px;
+  }
+
+  input[type=text], input[type=email], input[type=tel] {
+    width: calc(100% - 20px); /* Largura do input menos o padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+  }
+  
+ 
+  
+  button {
+    background-color: hsl(243, 100%, 62%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.next {
+    background-color: hsl(243, 100%, 62%);
+    color: white;
+  }
+  
+  button.next:hover {
+    background-color: hsl(213, 96%, 18%);
+  }
+  
+  button.back {
+    background-color: hsl(243, 100%, 62%);
+    color: white;
+  }
+  
+  button.back:hover {
+    background-color: hsl(213, 96%, 18%);
+  }
+
+  button:hover {
+    background-color: hsl(213, 96%, 18%);
+  }
+  
+  footer.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  footer.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+/* Estilização para as caixas de planos */
+.plan-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .plan-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align: left;
+    transition: border-color 0.3s;
+    position: relative; /* To help with image styling */
+  }
+
+  .plan-box img {
+    width: 30px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-bottom: 2px;
+  }
+  
+  .plan-box input {
+    display: none;
+  }
+  
+  .plan-box label {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .plan-box:hover {
+    border-color: #007bff;
+  }
+  
+  .plan-box input:checked + label {
+    border-color: #007bff;
+    color: #007bff;
+  }
+  
+  .billing-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .billing-container label {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+
+/* Estilização para as caixas de add-ons */
+.addon-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+.addon-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espaçamento entre as barras */
+  }
+  
+  .addon-bar input[type="radio"] {
+    margin-right: 10px; /* Espaço entre o input e o label */
+  }
+  
+  .addon-bar label {
+    width: 100%; /* Para ocupar todo o espaço disponível ao lado do input */
+    padding: 10px; /* Espaçamento interno dentro da barra */
+    border: 1px solid #ccc; /* Borda para visualizar a barra */
+    background-color: #f0f0f0; /* Cor de fundo da barra */
+  }
+
+  
+  
+  
+  
+  
