@@ -336,6 +336,36 @@ img {
     border: 1px solid #ccc; /* Borda para visualizar a barra */
     background-color: #f0f0f0; /* Cor de fundo da barra */
   }
+/* Estilos específicos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .sidebar .step-indicator {
+    margin-bottom: 0;
+  }
+
+  .step-number {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
 
   
   
