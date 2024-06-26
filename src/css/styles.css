@@ -316,14 +316,14 @@ body {
 /* Estilos específicos para dispositivos móveis */
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 10px;
+    padding: 8px;
   }
 
   .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
