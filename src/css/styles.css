@@ -350,6 +350,25 @@ body {
         font-size: 16px;
     }
 
+     .sidebar-horizontal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .sidebar-horizontal .step-indicator {
+    display: flex;
+    align-items: center;
+  }
+
+
     .buttons {
         flex-direction: column;
     }
@@ -363,6 +382,25 @@ body {
     .container {
         padding: 0 5px;
     }
+
+     .sidebar-horizontal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .sidebar-horizontal .step-indicator {
+    display: flex;
+    align-items: center;
+  }
+
 
     .sidebar {
         flex-direction: column;
