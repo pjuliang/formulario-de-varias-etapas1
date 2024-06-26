@@ -313,26 +313,12 @@ body {
     background-color: #f0f0f0; /* Cor de fundo da barra */
   }
 
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-        height: auto;
-        padding: 0 10px;
-    }
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
 
-    .sidebar {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .step-number {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
-    }
-
-     .sidebar-horizontal {
+  .sidebar-horizontal {
     position: fixed;
     top: 0;
     left: 0;
@@ -350,57 +336,26 @@ body {
     align-items: center;
   }
 
-
-    .buttons {
-        flex-direction: column;
-    }
-
-    .buttons button {
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 5px;
-    }
-
-     .sidebar-horizontal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f0f0f0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+  .step-label {
+    font-size: 12px;
   }
 
-  .sidebar-horizontal .step-indicator {
+  .step-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
   }
 
-
-    .sidebar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .step-number {
-        width: 25px;
-        height: 25px;
-        font-size: 14px;
-    }
-
-    .step-label {
-        font-size: 14px;
-    }
-
-    .step {
-        padding: 10px;
-    }
+  .step-number.active {
+    background-color: #28a745;
+  }
 }
-  
