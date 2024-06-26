@@ -313,10 +313,13 @@ body {
     background-color: #f0f0f0; /* Cor de fundo da barra */
   }
 
+
 /* Estilos específicos para dispositivos móveis */
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 8px;
+    padding: 12px;
+    max-width: 90%;
+    min-height: 300px;
   }
 
   .sidebar {
@@ -324,7 +327,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
