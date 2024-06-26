@@ -342,24 +342,25 @@ body {
   .sidebar {
     flex-direction: row;
     justify-content: space-around;
-     background-image: url('../images/bg-sidebar-desktop.svg'); /* Substitua pelo caminho correto da sua imagem */
-        background-size: cover; /* Para cobrir todo o espaço da .sidebar */
-        background-position: center; /* Para centralizar a imagem */
-        overflow-y: auto; /* Scroll vertical se o conteúdo exceder a altura */
+    background-image: url('../images/bg-sidebar-desktop.svg'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover; /* Para cobrir todo o espaço da .sidebar */
+    background-position: center; /* Para centralizar a imagem */
+     overflow-y: auto; /* Scroll vertical se o conteúdo exceder a altura */
         /* Adicione outros estilos conforme necessário */
-        max-height: 100vh; /* Definindo a altura máxima como 50% da altura da viewport */
-        overflow-y: auto; /* Adicionando scroll caso o conteúdo ultrapasse a altura definida */
-        flex: 1;
-        background-color: hsl(243, 100%, 62%);
-        color: white;
-        padding: 20px;
-        border-radius: 8px 8px 8px 8px;
+    max-height: 100vh; /* Definindo a altura máxima como 50% da altura da viewport */
+    overflow-y: auto; /* Adicionando scroll caso o conteúdo ultrapasse a altura definida */
+    flex: 1;
+    background-color: hsl(243, 100%, 62%);
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 8px 8px;
          /* Estilos para os números dentro de círculos */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 500px;
-        align-items: flex-start; /* Alinha os itens à direita */  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    weidth: 100px; 
+    align-items: flex-start; /* Alinha os itens à direita */  
   }
 
   .step {
