@@ -335,7 +335,8 @@ body {
 @media (max-width: 768px) {
   .container {
     width: 90%;
-    padding: 10px 20px;
+    height: 90%;  
+    padding: 0 10px;
   }
 
   .sidebar {
@@ -381,7 +382,7 @@ body {
   }
 
   .step {
-    padding: 8px;
+    padding: 10px;
   }
 }
   
