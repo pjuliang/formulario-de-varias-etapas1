@@ -320,6 +320,7 @@ body {
   }
 
   .sidebar {
+    background-image: url('../images/bg-sidebar-desktop.svg'); /* Substitua pelo caminho correto da sua imagem */  
     position: fixed;
     top: 0;
     left: 0;
@@ -342,7 +343,7 @@ body {
   }
 
   .step-label {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .step-number {
