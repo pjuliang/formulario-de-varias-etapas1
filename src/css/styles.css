@@ -313,7 +313,7 @@ body {
     background-color: #f0f0f0; /* Cor de fundo da barra */
   }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container {
         width: 90%;
         height: auto;
