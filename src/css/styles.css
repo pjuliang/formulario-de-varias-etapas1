@@ -323,7 +323,7 @@ body {
   }
 
   .sidebar {
-    background-image: url('../images/bg-sidebar-desktop.svg'); /* Substitua pelo caminho correto da sua imagem */  
+    background-image: url('../images/bg-sidebar-mobile.svg'); /* Substitua pelo caminho correto da sua imagem */  
     position: fixed;
     top: 0;
     left: 0;
