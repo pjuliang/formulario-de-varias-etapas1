@@ -336,7 +336,7 @@ body {
     z-index: 1000;
     height: 60px;
     flex-direction: row;
-    padding-top: 100px; /* Adiciona espaçamento superior */  
+    padding-top: 30px; /* Adiciona espaçamento superior */  
   }
 
   .sidebar .step-indicator {
