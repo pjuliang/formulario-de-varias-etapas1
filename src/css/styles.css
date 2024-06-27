@@ -365,6 +365,6 @@ body {
   }
 
   .step-number.active {
-    background-color: #28a745;
+    background-color: hsl(213, 96%, 18%);
   }
 }
